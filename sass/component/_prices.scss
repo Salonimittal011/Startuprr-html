@@ -1,0 +1,152 @@
+.real-prices {
+    background: $white;
+    font-family: $OpenSans-Regular;
+    padding: 50px 0;
+
+    .title-heading {
+        position: relative;
+
+        .left {
+            position: absolute;
+            left: 35%;
+            transform: translateY(40%);
+
+            @media screen and (max-width: 992px) {
+                left: 27%;
+            }
+
+            @media screen and (max-width: 767px) {
+                left: 4%;
+            }
+        }
+
+        .right {
+            position: absolute;
+            right: 35%;
+            transform: translateY(-26px);
+
+            @media screen and (max-width: 992px) {
+                right: 26%;
+            }
+
+            @media screen and (max-width: 767px) {
+                right: 2%;
+            }
+        }
+    }
+
+    h2::before {
+        position: absolute;
+        content: "";
+        border-top: 1px solid $greywhite;
+        border-bottom: 1px solid $greywhite;
+        width: 30%;
+        left: 4%;
+        top: 17px;
+        height: 4px;
+
+        @media screen and (max-width: 992px) {
+            border: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            border: none;
+        }
+    }
+
+
+    h2::after {
+        position: absolute;
+        content: "";
+        border-top: 1px solid $greywhite;
+        border-bottom: 1px solid $greywhite;
+        width: 30%;
+        right: 4%;
+        top: 16px;
+        height: 4px;
+
+        @media screen and (max-width: 992px) {
+            border: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            border: none;
+        }
+    }
+
+    p {
+        color: $greywhite;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .plans {
+        text-align: center;
+        margin: -12px;
+    }
+
+    .price-content {
+        padding-top: 20px;
+        border: 1px solid $light-grey;
+        border-radius: 6px;
+        text-align: center;
+
+        .prices {
+
+            h4 {
+                margin: 0;
+                padding: 10px;
+
+                span {
+                    font-size: $smalll-para;
+                    color: $greywhite;
+                    ;
+                }
+
+                sup {
+                    font-size: $smalll-para;
+                }
+            }
+
+            &::after {
+
+                content: "";
+                height: 1px;
+                width: 72%;
+                background: $light-grey;
+                position: absolute;
+                left: 14%;
+
+            }
+        }
+
+        .features {
+            span {
+                text-align: center;
+                display: block;
+                color: $greywhite;
+                padding: 10px 0;
+                font-size: $m-fontsize;
+            }
+
+            &::after {
+                content: "";
+                height: 1px;
+                width: 72%;
+                background: $light-grey;
+                position: absolute;
+                left: 14%;
+            }
+        }
+
+        .sign-up {
+            text-align: center;
+            margin: 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 50px;
+        }
+
+    }
+}

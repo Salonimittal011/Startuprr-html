@@ -1,0 +1,31 @@
+.comment {
+    background: $greyblack;
+    font-family: $OpenSans-Regular;
+    padding: 60px 0;
+
+    h2 {
+        color: $black;
+        text-align: left;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+
+    .comment-btn {
+        text-align: right;
+
+        img {
+            padding-left: 10px;
+        }
+
+        @media screen and (max-width: 992px) {
+            padding: 20px 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+}

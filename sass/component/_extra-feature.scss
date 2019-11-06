@@ -1,0 +1,90 @@
+.extra-feature {
+    background: $white;
+    font-family: $OpenSans-Regular;
+    padding: 60px 0;
+
+    .card {
+        text-align: center;
+        padding-top: 10px;
+
+        .card-inner {
+            width: 40px;
+            height: 30px;
+            top: 0;
+            background: $black;
+            text-align: center;
+            padding-top: 4px;
+            position: relative;
+            z-index: 1000;
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 12px solid $black;
+                top: 30px;
+                left: 0px;
+
+                @media screen and (max-width: 767px) {
+                    top: 29px;
+                }
+            }
+        }
+
+        .card-icon {
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            background: $green;
+            text-align: center;
+            padding-top: 8px;
+            z-index: 999;
+
+            &::after {
+                content: "";
+                position: absolute;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 12px solid $green;
+                top: 20px;
+                left: 0px;
+
+                @media screen and (max-width: 767px) {
+                    top: 19px;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-left: 20px;
+        }
+
+    }
+
+    .card-text {
+        @media screen and (max-width: 767px) {
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+    }
+
+    h3 {
+        color: $black;
+        margin: 0;
+    }
+
+    span {
+        color: $greywhite;
+        font-weight: bold;
+        font-size: $s-fontsize;
+    }
+
+    p {
+        text-align: left;
+        padding: 10px 0 40px 0;
+        margin: 0;
+        color: $greyblack;
+    }
+}

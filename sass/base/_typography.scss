@@ -1,0 +1,27 @@
+//font-size..
+$para: 14px;
+$smalll-para: 16px;
+$medium-para: 18px;
+$large-para: 20px;
+$main-heading: 64px;
+$title-heading: 26px;
+$m-fontsize: 14px;
+$xs-fontsize: 10px;
+$s-fontsize: 12px;
+$number-fontsize: 60px;
+$res-main-heading: 30px;
+$lap-main-heading: 32px;
+//Regular
+@font-face {
+    font-family: 'Open-Sans-Regular';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//font-family..
+$OpenSans-Regular: Open-Sans-Regular;
+

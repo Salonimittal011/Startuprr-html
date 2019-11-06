@@ -1,0 +1,16 @@
+.member-description{
+    background: $green;
+    font-family: $OpenSans-Regular;
+    text-align: center;
+    padding: 60px 0 80px 0;
+    h3{
+        margin: 0;
+        span{
+            color: $greywhite;
+        }
+    }
+    p{
+        color: $white;
+        padding-top: 10px;
+    }
+}

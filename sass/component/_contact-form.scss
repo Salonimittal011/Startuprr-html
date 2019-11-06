@@ -1,0 +1,55 @@
+#map {
+    height: 500px;
+    width: 100%;
+
+}
+
+.contact-form {
+    padding: 60px 0;
+    background: linear-gradient(45deg, black, transparent);
+    .form-inner {
+        width: 30%;
+        padding: 20px;
+        border: 1px solid $greywhite;
+        border-radius: 4px;
+        background: $white;
+
+        .form-elements {
+            input[type=text] {
+                margin: 10px 0;
+                width: 100%;
+                padding: 14px;
+                color: $black;
+                border: 1px solid $greywhite;
+                border-radius: 4px;
+                background: $white;
+            }
+
+            textarea {
+                margin: 14px 0;
+                width: 100%;
+                padding: 10px;
+                color: $black;
+                border: 1px solid $greywhite;
+                border-radius: 4px;
+                resize: none;
+                height: 100px;
+                font-family: $OpenSans-Regular;
+                background: $white;
+            }
+        }
+
+        a {
+            width: 100%;
+            display: block;
+        }
+
+        @media screen and (max-width: 992px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}

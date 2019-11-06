@@ -1,0 +1,159 @@
+.sample-work {
+    background: $white;
+    font-family: $OpenSans-Regular;
+    padding: 60px 0;
+
+
+    .title-heading {
+        position: relative;
+
+        .left {
+            position: absolute;
+            left: 37%;
+            transform: translateY(40%);
+
+            @media screen and (max-width: 992px) {
+                left: 30%;
+            }
+
+            @media screen and (max-width: 767px) {
+                left: 12%;
+            }
+        }
+
+        .right {
+            position: absolute;
+            right: 37%;
+            transform: translateY(-26px);
+
+            @media screen and (max-width: 992px) {
+                right: 29%;
+            }
+
+            @media screen and (max-width: 767px) {
+                right: 8%;
+            }
+
+        }
+    }
+
+    h2::before {
+        position: absolute;
+        content: "";
+        border-top: 1px solid $greywhite;
+        border-bottom: 1px solid $greywhite;
+        width: 30%;
+        left: 6%;
+        top: 17px;
+        height: 4px;
+
+        @media screen and (max-width: 992px) {
+            border: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            border: none;
+        }
+    }
+
+
+    h2::after {
+        position: absolute;
+        content: "";
+        border-top: 1px solid $greywhite;
+        border-bottom: 1px solid $greywhite;
+        width: 30%;
+        right: 6%;
+        top: 16px;
+        height: 4px;
+
+        @media screen and (max-width: 992px) {
+            border: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            border: none;
+        }
+    }
+
+    p {
+        color: $greyblack;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    a {
+        width: 100%;
+        display: block;
+    }
+
+    .sample-image {
+        img {
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &:hover .work-img {
+            opacity: 1;
+        }
+
+
+    }
+
+    .work-img {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $green;
+        opacity: 0;
+
+        .img-icon {
+            color: $green;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            background: $white;
+            border-radius: 4px;
+            display: inline-block;
+            transform: rotate(45deg);
+            margin: -1px;
+            transition: all 0.4s;
+
+            .fa-paperclip {
+                padding: 6px;
+                transform: rotate(-45deg);
+
+            }
+
+            .fa-search {
+                padding: 6px;
+                transform: rotate(45deg);
+            }
+
+
+
+            &:hover {
+                color: $white;
+                background: $green;
+                position: relative;
+                z-index: 999;
+            }
+            @media screen and (max-width: 767px){
+                display: none;
+            }
+        }
+    }
+
+    .image-overlay {
+        width: 256px;
+        height: 196px;
+    }
+}
+
+.sample-image:hover .image-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}

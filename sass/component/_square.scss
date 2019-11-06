@@ -1,0 +1,28 @@
+.square {
+    width: 35px;
+    height: 35px;
+    background: $green;
+    transform: translateY(-50%) rotate(45deg);
+    left: 50%;
+    position: absolute;
+    border-radius: 3px;
+
+    &-green {
+        background: $green;
+    }
+
+    &-black {
+        background: $black;
+
+    }
+
+    .image {
+        img {
+            transform: rotate(-45deg);
+            padding: 2px;
+        }
+        .img-quote{
+            padding: 10px 6px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.footer {
+    font-family: $OpenSans-Regular;
+
+    .footer-inner {
+        background: $black;
+        text-align: center;
+        padding: 50px 0;
+
+        .social-icons {
+            color: $white;
+            padding-top: 40px;
+
+            .icons {
+                padding: 8px 14px;
+                border: 1px solid #aaaaaa;
+                border-radius: 8px;
+                margin-right: 6px;
+                color: $white;
+                &:hover {
+                    background: $green;
+                    transition: all .5s;
+                }
+                @media screen and (max-width: 767px){
+                    border: none;
+                    display: block;
+                  font-size: $large-para;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        background: $black;
+        padding: 40px 0;
+        text-align: center;
+
+        h3 {
+            color: $greywhite;
+            margin: 0;
+        }
+    }
+
+    .fa-caret-up {
+        transform: rotate(-45deg);
+        padding: 10px 14px;
+        color: $white;
+    }
+}

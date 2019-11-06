@@ -1,0 +1,31 @@
+.purchase {
+    background: $green;
+    font-family: $OpenSans-Regular;
+    padding: 20px;
+
+    h3 {
+        color: $white;
+        font-weight: 100;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    .purchase-btn {
+        padding: 12px 0;
+        text-align: right;
+
+        a {
+            margin: 0 4px;
+
+            @media screen and (max-width: 767px) {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+}

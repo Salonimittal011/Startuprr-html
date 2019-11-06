@@ -1,0 +1,125 @@
+.article {
+    font-family: $OpenSans-Regular;
+    background: $white;
+    padding: 60px 0;
+
+    p {
+        text-align: center;
+        color: $greyblack;
+    }
+
+    .title-heading {
+        position: relative;
+
+        .left {
+            position: absolute;
+            left: 37%;
+            transform: translateY(40%);
+
+            @media screen and (max-width: 992px) {
+                left: 30%;
+            }
+
+            @media screen and (max-width: 767px) {
+                left: 10%;
+            }
+        }
+
+        .right {
+            position: absolute;
+            right: 37%;
+            transform: translateY(-26px);
+
+            @media screen and (max-width: 992px) {
+                right: 28%;
+            }
+
+            @media screen and (max-width: 767px) {
+                right: 8%;
+            }
+        }
+    }
+
+    h2::before {
+        position: absolute;
+        content: "";
+        border-top: 1px solid $greywhite;
+        border-bottom: 1px solid $greywhite;
+        width: 30%;
+        left: 6%;
+        top: 17px;
+        height: 4px;
+
+        @media screen and (max-width: 992px) {
+            border: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            border: none;
+        }
+    }
+
+
+    h2::after {
+        position: absolute;
+        content: "";
+        border-top: 1px solid $greywhite;
+        border-bottom: 1px solid $greywhite;
+        width: 30%;
+        right: 6%;
+        top: 16px;
+        height: 4px;
+
+        @media screen and (max-width: 992px) {
+            border: none;
+        }
+        @media screen and (max-width: 767px) {
+            border: none;
+        }
+    }
+
+    .article-inner {
+        text-align: center;
+        padding-top: 30px;
+        cursor: pointer;
+
+
+        .article-images {
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            background: $black;
+            border-radius: 50%;
+            transition: all 0.4s;
+
+            .pc {
+                padding: 2px;
+            }
+
+            .puzzle {
+                padding: 10px 0;
+            }
+
+            .support {
+                padding: 18px 0;
+            }
+
+            &:hover {
+                background: $green;
+                transition: all 0.4s;
+            }
+        }
+
+        .btn-white {
+            border: 1px solid $greyblack;
+            border-radius: 4px;
+            margin-top: 16px;
+            font-size: $xs-fontsize;
+
+            &:hover {
+                background: $green;
+                border: 1px solid $white;
+            }
+        }
+    }
+}

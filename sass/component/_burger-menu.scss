@@ -1,0 +1,83 @@
+.nav-icon {
+    border: 0;
+    cursor: pointer;
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 99999;
+    background: none;
+    bottom: 8px;
+    right: 68px;
+
+    .menu-item {
+        width: 26px;
+        height: 3px;
+        background: $black;
+        border-radius: 6px;
+        margin: 0 0 4px;
+
+        @media screen and(max-width:992px) {
+            display: block;
+        }
+
+        @media screen and(max-width:767px) {
+            display: block;
+
+        }
+    }
+
+    &.open+.topnav {
+        display: none;
+        transition: all 2s ease;
+
+        @media screen and(max-width:992px) {
+            display: block;
+        }
+
+        @media screen and(max-width:767px) {
+            display: block;
+        }
+
+    }
+
+    &.open {
+        transition: 0.5s;
+
+        .menu-item {
+            margin: 0 0 5px;
+
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: 4px;
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: 0px;
+            }
+        }
+
+        @media screen and(max-width:992px) {
+            display: block;
+        }
+
+        @media screen and(max-width:767px) {
+            display: block;
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        display: block;
+    }
+
+
+    @media screen and(max-width:767px) {
+        display: block;
+
+    }
+}

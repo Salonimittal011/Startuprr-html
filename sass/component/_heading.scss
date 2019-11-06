@@ -1,0 +1,23 @@
+h1 {
+    font-size: $main-heading;
+}
+
+h2 {
+    font-size: $title-heading;
+    margin: 0;
+    padding-left: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+span {
+    color: $green;
+}
+
+h3 {
+    font-size: $m-fontsize;
+}
+
+h4 {
+    font-size: $number-fontsize;
+}

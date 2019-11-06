@@ -1,0 +1,26 @@
+.clients {
+    background: $black;
+    padding: 50px 0;
+
+    .client-image {
+        text-align: center;
+        padding: 30px 20px;
+        background: rgba(0, 0, 0, 0.1);
+        transition: all 0.5s;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.6);
+            transition: all 0.5s;
+        }
+
+        @media screen and(max-width: 992px) {
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media screen and(max-width: 767px) {
+            margin: 10px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+}

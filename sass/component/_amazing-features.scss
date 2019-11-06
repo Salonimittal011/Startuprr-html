@@ -1,0 +1,104 @@
+.amazing-features {
+    background: $black;
+    font-family: $OpenSans-Regular;
+    padding-top: 60px;
+
+    .title-heading {
+        position: relative;
+
+        .left {
+            position: absolute;
+            left: 35%;
+            transform: translateY(40%);
+
+            @media screen and (max-width: 992px) {
+                left: 26%;
+            }
+
+            @media screen and (max-width: 767px) {
+                left: 4%;
+            }
+        }
+
+        .right {
+            position: absolute;
+            right: 35%;
+            transform: translateY(-26px);
+
+            @media screen and (max-width: 992px) {
+                right: 25%;
+            }
+
+            @media screen and (max-width: 767px) {
+                right: 3%;
+            }
+        }
+    }
+
+    h2,
+    h3 {
+        color: $white;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    p {
+        color: $greyblack;
+        padding-bottom: 40px;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            padding-bottom: 0px;
+        }
+    }
+
+    .feature-text {
+        p {
+            text-align: left;
+
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .images {
+        padding-top: 20px;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    .feature-image {
+        text-align: right;
+
+        img {
+
+            @media screen and (max-width: 992px) {
+                width: 250px;
+            }
+            @media screen and (max-width: 767px) {
+                width: 250px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            text-align: center;
+
+        }
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+
+    }
+
+    @media screen and (max-width: 992) {}
+
+    @media screen and (max-width: 767) {}
+}
